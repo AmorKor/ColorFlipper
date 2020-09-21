@@ -1,0 +1,27 @@
+.page__body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    display: grid;
+
+    // background-color: red;
+}
+
+.page__bodyWrapper {
+    // background-color: red;
+
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: [header-start]  min-content [header-end appBody-start] 1fr [appBody-end]; 
+    grid-template-columns: 1fr;
+
+}
+
+.page__header {
+    grid-row: header-start / header-end;
+    z-index: 1;
+}
+
+.page__main {
+    // margin-top: -100px;
+    grid-row: appBody-start / appBody-end;
+}

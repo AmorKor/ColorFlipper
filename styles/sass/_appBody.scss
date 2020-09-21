@@ -1,0 +1,95 @@
+//MAIN
+.main {
+    display: grid;
+    place-items: center;
+    color: $color-main;
+    padding: 20px;
+}
+
+.main__container {
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+//TITLE 
+.main__title {
+    margin: 0;
+    padding: 20px 30px;
+    background-color: $color-main;
+    border-radius: 15px;
+    
+    color: $color-base;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .main__title {
+        font-size: 24px
+    }
+}
+
+@media (max-width: 386px) {
+    .main__title span {
+        // display: inline-block;
+        // font-size: 28px;
+        // margin-top: 10px;
+    }
+}
+
+//BUTTONS
+.main__buttonsWrapper {
+    width: max-content;
+    margin-top: 30px;
+    align-self: center;;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@media (max-width: 480px) {
+    .main__buttonsWrapper {
+        flex-flow: column nowrap;
+        width: 80%;
+    }
+}
+
+.main__button {
+    display: block;
+    border: solid 3px $color-main;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 15px 30px 13px;
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-main;
+
+    transition-property: color, background-color, transform;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+}
+
+.main__button:first-of-type {
+    margin-right: 15px;
+}
+
+@media (max-width: 480px) {
+    .main__button:first-of-type {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.main__button:focus {
+    outline: none;
+    transform: scale(1.1)
+}
+
+.main__button:hover, .main__button:active {
+    outline: none;
+    background-color: $color-main;
+    color: $color-base;
+}
