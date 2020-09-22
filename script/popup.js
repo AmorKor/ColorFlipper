@@ -4,7 +4,6 @@ const color = document.getElementById('currentColor')
 const colorText = color.textContent
 let position = 0
 let positionShift = popup.clientHeight
-// const copyBtn = document.getElementById('buttonCopy')
 console.log(colorText)
 
 copyBtn.addEventListener('click', function() {

@@ -6,8 +6,6 @@ copyBtn.addEventListener('click', function() {
     var color = document.getElementById('currentColor').innerText
 
     textToClipboard(color)
-
-    // alert("Copied the text: " + color)
 })
 
 //FUNCS
