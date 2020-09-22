@@ -3,7 +3,8 @@
     display: grid;
     place-items: center;
     color: $color-main;
-    padding: 20px;
+    // padding: 20px;
+    // width: calc(100% - 20px);
 }
 
 .main__container {
