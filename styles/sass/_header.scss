@@ -103,6 +103,11 @@
         font-weight: 300;
     }
     
+    .header__menuLink--current {
+        border-bottom: solid 2px $color-main-faded;
+    }
+    
+    //transitions
     .header__menuLink:hover, .header__menuLink:active, .header__menuLink:focus {
         border-bottom: solid 2px $color-main-faded;
         outline: none;
@@ -122,10 +127,6 @@
         transition: transform 150ms ease-out;
     }
  
-    .header__menuLink--current {
-        border-bottom: solid 2px $color-main-faded;
-    }
-    
     .header__menuLink--current span {
         transform: translateY(-2px);        
     }
@@ -141,6 +142,14 @@
         .header__menuLink {
             color: $color-base;
         }
+
+        .header__menuLink--current {
+            border-bottom: solid 2px $color-base;
+        }
+
+        .header__menuLink:hover, .header__menuLink:active, .header__menuLink:focus {
+            border-bottom: 2px solid $color-base;
+        }        
     }
 }
     
