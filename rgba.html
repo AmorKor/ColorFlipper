@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/main.css">
+    
+    <title>Color flipper</title>
+</head>
+<body class="page__body">
+    <div class="page__bodyWrapper">
+        <!-- Popup -->
+        <div class="popup page__popup" id="popup">
+            Copied to clipboard!
+        </div>
+        <!-- Header -->
+        <header class="header page__header">
+            <h1 class="header__title">Color flipper</h1>
+            <button class="header__button header__button--closed" id="header__button">
+                <svg class="header__icon header__icon--menu" 
+                     viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 8h22M5 16h22M27 24H5" stroke-width="3" stroke="#2d2d36" stroke-linecap="round"/>
+                </svg>
+                <svg class="header__icon header__icon--cross" 
+                     viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 24L25 8M25 24L7 8" stroke-width="3" stroke="#2d2d36" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <nav class="header__nav header__nav--closed">
+                <ul class="header__menu">
+                    <li class="header__menuItem">
+                        <a href="rgb.html" class="header__menuLink"><span>RGB</span></a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a href="rgba.html" class="header__menuLink header__menuLink--current"><span>RGBa</span></a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a href="hex.html" class="header__menuLink"><span>HEX</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main class="main page__main">
+            <div class="main__container">
+                <h2 class="main__title">
+                    Your color:
+                    <span class="color main__color" id="currentColor">
+                        Click to generate!
+                    </span>
+                </h2>
+                <div class="main__buttonsWrapper">
+                    <button class="main__button" id="buttonGenerate">Generate!</button>
+                    <button class="main__button" id="buttonCopy">Copy</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- App -->
+    <script src="script/header.js"></script>
+    <script src="script/rgba.js"></script>
+    <script src="script/copyBtn.js"></script>
+    <script src="script/popup.js"></script>
+</body>
+</html>

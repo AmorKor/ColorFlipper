@@ -12,6 +12,10 @@
 </head>
 <body class="page__body">
     <div class="page__bodyWrapper">
+        <!-- Popup -->
+        <div class="popup page__popup" id="popup">
+            Copied to clipboard!
+        </div>        
         <!-- Header -->
         <header class="header page__header">
             <h1 class="header__title">Color flipper</h1>
@@ -28,13 +32,13 @@
             <nav class="header__nav header__nav--closed">
                 <ul class="header__menu">
                     <li class="header__menuItem">
-                        <a href="#" class="header__menuLink"><span>RGB</span></a>
+                        <a href="rgb.html" class="header__menuLink"><span>RGB</span></a>
                     </li>
                     <li class="header__menuItem">
-                        <a href="#" class="header__menuLink"><span>RGBa</span></a>
+                        <a href="rgba.html" class="header__menuLink"><span>RGBa</span></a>
                     </li>
                     <li class="header__menuItem">
-                        <a href="#" class="header__menuLink"><span>HEX</span></a>
+                        <a href="hex.html" class="header__menuLink header__menuLink--current"><span>HEX</span></a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +49,7 @@
                 <h2 class="main__title">
                     Your color:
                     <span class="color main__color" id="currentColor">
-                        #ffffff
+                        Click to generate!
                     </span>
                 </h2>
                 <div class="main__buttonsWrapper">
@@ -56,7 +60,9 @@
         </main>
     </div>
     <!-- App -->
-    <script src="script/app.js"></script>
     <script src="script/header.js"></script>
+    <script src="script/hex.js"></script>
+    <script src="script/copyBtn.js"></script>
+    <script src="script/popup.js"></script>
 </body>
 </html>

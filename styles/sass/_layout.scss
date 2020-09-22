@@ -2,13 +2,9 @@
     font-family: 'Kumbh Sans', sans-serif;
     height: 100vh;
     display: grid;
-
-    // background-color: red;
 }
 
 .page__bodyWrapper {
-    // background-color: red;
-
     grid-row: 1 / -1;
     display: grid;
     grid-template-rows: [header-start]  min-content [header-end appBody-start] 1fr [appBody-end]; 
@@ -22,6 +18,17 @@
 }
 
 .page__main {
-    // margin-top: -100px;
     grid-row: appBody-start / appBody-end;
+}
+
+.page__popup {
+    position: absolute;
+    // top: 100px;
+    left: calc(50% - 160px);
+}
+
+@media (max-width: 480px) {
+    .page__popup {
+        left: calc(50% - 105px);
+    }    
 }
