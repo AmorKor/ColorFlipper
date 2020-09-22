@@ -221,9 +221,7 @@
 .popup {
   background-color: #2d2d36;
   padding: 20px 45px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20ch;
   border-radius: 40px;
   font-size: 24px;
   text-align: center;

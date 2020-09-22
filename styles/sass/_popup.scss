@@ -1,7 +1,8 @@
 .popup {
     background-color: $color-main;
     padding: 20px 45px;
-    width: max-content;
+    // width: ;
+    min-width: 20ch;
     border-radius: 40px;
     
     font-size: 24px;
