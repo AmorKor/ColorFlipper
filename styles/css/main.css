@@ -148,6 +148,7 @@
 
 .header__menu .header__menuLink:hover, .header__menu .header__menuLink:active, .header__menu .header__menuLink:focus {
   border-bottom: solid 2px #545463;
+  outline: none;
   -webkit-transition: border-bottom 100ms ease;
   transition: border-bottom 100ms ease;
 }

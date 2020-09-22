@@ -6,8 +6,6 @@ const navMenu = document.querySelector('.header__nav')
 Btn.addEventListener('click', function() {
     checkBtn();
     checkMenu();
-
-    console.log('clicked')
 })
 
 // FUNCTIONS
