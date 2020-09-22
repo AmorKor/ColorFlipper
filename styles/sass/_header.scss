@@ -14,6 +14,13 @@
     align-items: center;
 }
 
+@media (min-width: 1600px) {
+    .header {
+        margin: 0 10px;
+        padding: 20px 30px; 
+    }
+}
+
 .header__title {
     margin: 0;
     letter-spacing: 0.05ch;
@@ -22,9 +29,15 @@
 @media (max-width: 480px) {
     .header__title {
         margin: 0;
-        letter-spacing: 0.1ch;
+        letter-spacing: 0.05ch;
         font-size: 24px;
     }    
+}
+
+@media (min-width: 1600px) {
+    .header__title {
+        font-size: 40px;
+    }
 }
 
 //BUTTON
@@ -91,45 +104,45 @@
     grid-auto-flow: column;
     grid-template-columns: min-content;
     column-gap: 20px;
+}
 
-    .header__menuLink {
-        border-bottom: 0 solid $color-main-faded;
-        
-        transition: border-bottom 50ms ease-out;
+.header__menuLink {
+    border-bottom: 0 solid $color-main-faded;
+    
+    transition: border-bottom 50ms ease-out;
 
-        text-decoration: none;
-        color: $color-main-faded;
-        font-size: 18px;
-        font-weight: 300;
-    }
-    
-    .header__menuLink--current {
-        border-bottom: solid 2px $color-main-faded;
-    }
-    
-    //transitions
-    .header__menuLink:hover, .header__menuLink:active, .header__menuLink:focus {
-        border-bottom: solid 2px $color-main-faded;
-        outline: none;
-        
-        transition: border-bottom 100ms ease;
-    }
-    
-    .header__menuLink span {
-        display: inline-block;
+    text-decoration: none;
+    color: $color-main-faded;
+    font-size: 18px;
+    font-weight: 300;
+}
 
-        transform: translateY(0);
-        transition: transform 150ms ease-out;
-    }
+.header__menuLink--current {
+    border-bottom: solid 2px $color-main-faded;
+}
+
+//transitions
+.header__menuLink:hover, .header__menuLink:active, .header__menuLink:focus {
+    border-bottom: solid 2px $color-main-faded;
+    outline: none;
     
-    .header__menuLink:hover span, .header__menuLink:focus span {
-        transform: translateY(-2px);        
-        transition: transform 150ms ease-out;
-    }
- 
-    .header__menuLink--current span {
-        transform: translateY(-2px);        
-    }
+    transition: border-bottom 100ms ease;
+}
+
+.header__menuLink span {
+    display: inline-block;
+
+    transform: translateY(0);
+    transition: transform 150ms ease-out;
+}
+
+.header__menuLink:hover span, .header__menuLink:focus span {
+    transform: translateY(-2px);        
+    transition: transform 150ms ease-out;
+}
+
+.header__menuLink--current span {
+    transform: translateY(-2px);        
 }
 
 @media (max-width: 480px) {
@@ -152,4 +165,9 @@
         }        
     }
 }
-    
+
+@media (min-width: 1600px) {
+    .header__menuLink {
+        font-size: 24px;
+    }
+}

@@ -10,6 +10,12 @@
     transition: transform 800ms cubic-bezier(.62,-0.15,.12,1.31);
 }
 
+@media (min-width: 1600px) {
+    .popup {
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 480px) {
     .popup {
         font-size: 18px;

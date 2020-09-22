@@ -18,11 +18,20 @@
     padding: 20px 30px;
     background-color: $color-main;
     border-radius: 15px;
-    min-width: 48vw;
+    min-width: 50vw;
     
     color: $color-base;
     font-size: 32px;
     text-align: center;
+}
+
+@media (min-width: 1600px) {
+    .main__title {
+        padding: 30px 30px;
+        font-size: 40px;
+
+        min-width: 30vw;
+    }
 }
 
 @media (min-width: 890px) {
@@ -81,6 +90,16 @@
     transition-property: color, background-color, transform;
     transition-duration: 150ms;
     transition-timing-function: ease-in;
+}
+
+@media (min-width: 1600px) {
+    .main__button {
+        padding: 20px 35px 18px;
+        border: solid 4px $color-main;
+        border-radius: 50px;
+        
+        font-size: 24px;
+    }
 }
 
 .main__button:first-of-type {
